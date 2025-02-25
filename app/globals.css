@@ -21,6 +21,11 @@ body {
 }
 
 .logo-bg {
-  background-size: 80px 80px;
-  background: url("/adam_outline.svg") repeat;
+  background: url("/adam_outline.svg");
+  background-size: 100px 100px; /* Adjust the size of the logos */
+  background-repeat: repeat;
+  background-position: 0 0; /* Position of the first image */
+  padding: 0;
+  backdrop-filter: blur(2px);
+  opacity: 0.6;
 }

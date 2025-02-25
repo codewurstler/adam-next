@@ -21,4 +21,14 @@ export default {
     require("@tailwindcss/typography"),
     require('daisyui'),
   ],
+  daisyui: {
+    themes: [
+      {
+        light: {
+          ...require("daisyui/src/theming/themes")["light"],
+          primary: "#8b0000"
+        },
+      },
+    ],
+  },
 } satisfies Config;

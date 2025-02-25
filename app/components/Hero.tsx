@@ -1,8 +1,19 @@
+'use client'
+
 import Image from "next/image";
-import Link from "next/link";
-import {Bars3BottomLeftIcon} from "@heroicons/react/24/outline";
+import {Bars3BottomLeftIcon, ChevronDoubleDownIcon} from "@heroicons/react/24/outline";
 
 export default function Hero() {
+    const scrollToElement = (elementId: string) => {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+            });
+        }
+    };
+
     return (
         <div className="relative w-full h-screen">
             {/* Navbar */}
@@ -10,53 +21,35 @@ export default function Hero() {
                 <div className="container">
                     <div className="flex-1">
                         <a className="btn btn-ghost text-lg">
-                            <Image src="/adam_schwarz.svg" width="75" height="20" alt="logo" />
+                            <Image src="/adam_schwarz.svg" width="50" height="20" alt="logo" />
                         </a>
                     </div>
                     <div className="flex-none">
-                        <details className="dropdown">
-                            <summary className="btn btn-square m-1"><Bars3BottomLeftIcon className="h-6 w-6"></Bars3BottomLeftIcon></summary>
-                            <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-                                <li><a>Item 1</a></li>
-                                <li><a>Item 2</a></li>
+                        <details className="dropdown dropdown-bottom dropdown-end">
+                            <summary className="btn btn-square"><Bars3BottomLeftIcon className="h-6 w-6"></Bars3BottomLeftIcon></summary>
+                            <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] min-w-[200px] p-2 shadow mt-3">
+                                <li><a>Upcoming Concerts</a></li>
+                                <li><a>Contact</a></li>
+                                <li><a>Socialmedia</a></li>
                             </ul>
                         </details>
                     </div>
                 </div>
             </div>
 
-            {/* Hero Section */}
-            <div className="hero min-h-screen">
-                {/* Background Image */}
-                <Image
-                    src="/adam.jpg"
-                    alt="Hero Background"
-                    fill={true}
-                    style={{ objectFit: "cover" }}
-                    priority
-                />
-                <div className="hero-content text-center text-white">
-                    <div className="container">
-                        <div>
-                            <Image src="/adam_outline.svg" width="400" height="200" alt="logo" />
-                            <h1 className="hidden">Adam</h1>
-                            <p className="text-xl mt-2">Kinda good but also kinda chaos</p>
-                            <Link href="#booking" className="btn btn-primary mt-4">Book us now!</Link>
-                        </div>
+            <div
+                className="hero min-h-screen"
+                style={{
+                    backgroundImage: "url(/adam.jpg)",
+                }}>
+                <div className="hero-overlay logo-bg"></div>
+                <div className="hero-content h-full relative">
+                    <div className="max-w-xl text-center">
+                        <Image src="/adam_white.svg" width="500" height="200" alt="logo" />
+                        <button onClick={() => scrollToElement("content")} className="btn btn-primary btn-outline btn-square absolute bottom-10"><ChevronDoubleDownIcon className="h-6 w-6"></ChevronDoubleDownIcon></button>
                     </div>
                 </div>
             </div>
-
-            {/* Dummy Sections */}
-            <section id="about" className="h-screen flex items-center justify-center bg-gray-100">
-                <h2 className="text-3xl font-bold">About Us</h2>
-            </section>
-            <section id="services" className="h-screen flex items-center justify-center bg-gray-200">
-                <h2 className="text-3xl font-bold">Our Services</h2>
-            </section>
-            <section id="contact" className="h-screen flex items-center justify-center bg-gray-300">
-                <h2 className="text-3xl font-bold">Contact Us</h2>
-            </section>
         </div>
     );
 }
