@@ -17,7 +17,7 @@ export default function Hero() {
     return (
         <div className="relative w-full h-screen">
             {/* Navbar */}
-            <div className="navbar bg-base-100 fixed top-0 left-0 z-10">
+            <div className="navbar bg-base-100 fixed top-0 left-0 z-10 shadow">
                 <div className="container">
                     <div className="flex-1">
                         <a className="btn btn-ghost text-lg">
