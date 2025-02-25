@@ -1,7 +1,8 @@
 'use client'
 
 import Image from "next/image";
-import {Bars3BottomLeftIcon, ChevronDoubleDownIcon} from "@heroicons/react/24/outline";
+import {ChevronDoubleDownIcon} from "@heroicons/react/24/outline";
+import Navigation from "@/app/components/Navigation";
 
 export default function Hero() {
     const scrollToElement = (elementId: string) => {
@@ -16,26 +17,7 @@ export default function Hero() {
 
     return (
         <div className="relative w-full h-screen">
-            {/* Navbar */}
-            <div className="navbar bg-base-100 fixed top-0 left-0 z-10 shadow">
-                <div className="container">
-                    <div className="flex-1">
-                        <a className="btn btn-ghost text-lg">
-                            <Image src="/adam_schwarz.svg" width="50" height="20" alt="logo" />
-                        </a>
-                    </div>
-                    <div className="flex-none">
-                        <details className="dropdown dropdown-bottom dropdown-end">
-                            <summary className="btn btn-square"><Bars3BottomLeftIcon className="h-6 w-6"></Bars3BottomLeftIcon></summary>
-                            <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] min-w-[200px] p-2 shadow mt-3">
-                                <li><a>Upcoming Concerts</a></li>
-                                <li><a>Contact</a></li>
-                                <li><a>Socialmedia</a></li>
-                            </ul>
-                        </details>
-                    </div>
-                </div>
-            </div>
+           <Navigation />
 
             <div
                 className="hero min-h-screen"
