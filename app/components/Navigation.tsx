@@ -19,7 +19,7 @@ function Navigation() {
                             <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] min-w-[200px] p-2 shadow mt-3">
                                 <li><Link href="/#concerts">Upcoming Concerts</Link></li>
                                 <li><Link href="/#booking">Contact / Booking</Link></li>
-                                <li><Link href="/#social-media">Socialmedia</Link></li>
+                                <li><Link href="/#social-media">Social Media</Link></li>
                             </ul>
                         </details>
                     </div>
