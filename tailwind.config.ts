@@ -29,6 +29,7 @@ export default {
           primary: "#8b0000"
         },
       },
+        "light",
     ],
   },
 } satisfies Config;
