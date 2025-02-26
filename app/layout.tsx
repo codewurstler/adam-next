@@ -11,9 +11,32 @@ const raj = Rajdhani({
     weight: ["300", "400", "500", "600", "700"],
     display: "swap",
 })
+
 export const metadata: Metadata = {
-  title: "Adam - Band Website",
-  description: "Adam the new and upcoming band from switzerland!",
+    metadataBase: new URL("https://adam-band.com"),
+    title: "Adam Band | Swiss Rock Band – Alternative Rock from Switzerland",
+    description: "Adam is a Swiss rock band delivering powerful alternative rock music. Discover our latest songs, upcoming concerts, and official merchandise!",
+    openGraph: {
+        type: "website",
+        locale: "en_US",
+        url: "https://adam-band.com",
+        siteName: "Adam Band",
+        images: [
+            {
+                url: "https://adam-band.com/opengraph-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Adam Band - Swiss Rock Band",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        site: "@YourBandTwitter",
+        title: "Adam Band | Swiss Rock Band – Alternative Rock from Switzerland",
+        description: "Adam is a Swiss rock band delivering powerful alternative rock music. Discover our latest songs, upcoming concerts, and official merchandise!",
+        images: ["https://adam-band.com/opengraph-image.jpg"],
+    },
 };
 
 export default function RootLayout({
