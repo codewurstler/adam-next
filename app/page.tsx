@@ -31,7 +31,7 @@ export default function Home() {
                                     <td>Muotathal, SZ</td>
                                     <td><a className="btn btn-link"
                                            href="https://sonsofsobchak.jimdofree.com/gig-lanzigf%C3%A4scht/"
-                                           target="_blank" rel="noopener noreferrer">More <ArrowTopRightOnSquareIcon
+                                           target="_blank" rel="noopener noreferrer">Info / Tickets <ArrowTopRightOnSquareIcon
                                         className="h-4 w-4"/> </a></td>
                                 </tr>
                                 <tr>
@@ -40,7 +40,7 @@ export default function Home() {
                                     <td>Sins, AG</td>
                                     <td><a className="btn btn-link"
                                            href="https://seiserkurve.ch/programm/adam-und-voltage-arc.html"
-                                           target="_blank" rel="noopener noreferrer">More <ArrowTopRightOnSquareIcon
+                                           target="_blank" rel="noopener noreferrer">Info / Tickets <ArrowTopRightOnSquareIcon
                                         className="h-4 w-4"/> </a></td>
                                 </tr>
                                 </tbody>

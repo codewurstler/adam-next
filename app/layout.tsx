@@ -59,7 +59,7 @@ export default function RootLayout({
                 </p>
             </aside>
             <nav>
-                <h6 className="footer-title">Legal</h6>
+                <p className="footer-title">Legal</p>
                 <Link className="link link-hover" href="/imprint">Imprint</Link>
             </nav>
         </footer>
