@@ -1,9 +1,9 @@
 import Hero from "@/app/components/Hero";
-import {ArrowTopRightOnSquareIcon} from "@heroicons/react/24/outline";
 import {SocialIcon} from "react-social-icons/component";
 import 'react-social-icons/youtube';
 import 'react-social-icons/tiktok';
 import 'react-social-icons/instagram';
+import Concerts from "@/app/components/Concerts";
 
 export default function Home() {
     return (
@@ -13,40 +13,9 @@ export default function Home() {
                 <section id="concerts" className="py-20 lg:py-32">
                     <div className="container mx-auto text-center">
                         <h2 className="text-4xl lg:text-6xl text-primary mb-20">Upcoming Concerts</h2>
-
                         <div className="overflow-x-auto max-w-4xl mx-auto">
-                            <table className="table table-lg">
-                                <thead>
-                                <tr>
-                                    <th>Date</th>
-                                    <th>Event</th>
-                                    <th>Location</th>
-                                    <th></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th>05.04.2025</th>
-                                    <td>Lanzig Fäscht</td>
-                                    <td>Muotathal, SZ</td>
-                                    <td><a className="btn btn-link"
-                                           href="https://sonsofsobchak.jimdofree.com/gig-lanzigf%C3%A4scht/"
-                                           target="_blank" rel="noopener noreferrer">Info / Tickets <ArrowTopRightOnSquareIcon
-                                        className="h-4 w-4"/> </a></td>
-                                </tr>
-                                <tr>
-                                    <th>12.04.2025</th>
-                                    <td>d&#39;Seiser Curve</td>
-                                    <td>Sins, AG</td>
-                                    <td><a className="btn btn-link"
-                                           href="https://seiserkurve.ch/programm/adam-und-voltage-arc.html"
-                                           target="_blank" rel="noopener noreferrer">Info / Tickets <ArrowTopRightOnSquareIcon
-                                        className="h-4 w-4"/> </a></td>
-                                </tr>
-                                </tbody>
-                            </table>
+                            <Concerts />
                         </div>
-
                     </div>
                 </section>
                 <section id="booking" className="py-20 lg:py-32 bg-gray-200">
