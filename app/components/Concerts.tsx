@@ -45,3 +45,5 @@ export default async function Concerts() {
         </table>
     );
 }
+
+export const dynamic = 'force-dynamic'
