@@ -5,6 +5,9 @@ import 'react-social-icons/tiktok';
 import 'react-social-icons/instagram';
 import Concerts from "@/app/components/Concerts";
 
+export const revalidate = 60
+export const dynamicParams = true
+
 export default function Home() {
     return (
         <>
