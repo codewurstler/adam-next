@@ -6,7 +6,7 @@ import {Bars3BottomLeftIcon} from "@heroicons/react/24/outline";
 function Navigation() {
     return (
         <div>
-            <div className="navbar bg-base-100 fixed top-0 left-0 z-10 shadow">
+            <div className="navbar bg-base-100 fixed top-0 left-0 z-10 shadow-sm">
                 <div className="container">
                     <div className="flex-1">
                         <Link className="btn btn-ghost text-lg" href="/">
@@ -16,7 +16,7 @@ function Navigation() {
                     <div className="flex-none">
                         <details className="dropdown dropdown-bottom dropdown-end">
                             <summary className="btn btn-square"><Bars3BottomLeftIcon className="h-6 w-6"></Bars3BottomLeftIcon></summary>
-                            <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] min-w-[200px] p-2 shadow mt-3">
+                            <ul className="menu dropdown-content bg-base-100 rounded-box z-1 min-w-[200px] p-2 shadow-sm mt-3">
                                 <li><Link href="/#concerts">Upcoming Concerts</Link></li>
                                 <li><Link href="/#booking">Contact / Booking</Link></li>
                                 <li><Link href="/#social-media">Social Media</Link></li>

@@ -1,40 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+@plugin "daisyui";
 
 .logo-bg {
   background: url("/adam_outline.svg");
-  background-size: 100px 100px; /* Adjust the size of the logos */
+  background-size: 100px 100px;
   background-repeat: repeat;
-  background-position: 0 0; /* Position of the first image */
-  padding: 0;
-  backdrop-filter: blur(2px);
-  opacity: 0.6;
-}
-
-.logo-bg-red {
-  background: url("/adam_outline_red.svg");
-  background-size: 100px 100px; /* Adjust the size of the logos */
-  background-repeat: repeat;
-  background-position: 0 0; /* Position of the first image */
+  background-position: 0 0;
   padding: 0;
   backdrop-filter: blur(2px);
   opacity: 0.6;

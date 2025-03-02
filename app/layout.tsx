@@ -47,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="cupcake">
     <body className={`${raj.className} flex flex-col min-h-screen`}>
-    <main className="flex-grow">{children}</main>
+    <main className="grow">{children}</main>
     <div className="bg-neutral">
         <footer className="footer text-neutral-content p-10 container">
             <aside>
