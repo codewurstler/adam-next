@@ -49,20 +49,22 @@ export default function RootLayout({
     <body className={`${raj.className} flex flex-col min-h-screen`}>
     <main className="grow">{children}</main>
     <div className="bg-neutral">
-        <footer className="footer text-neutral-content p-10 container">
-            <aside>
-                <div className="container"></div>
-                <Image src="/adam_white.svg" alt="Logo" width="60" height="60" />
-                <p>
-                    Adam (The Band!)
-                    <br />
-                </p>
-            </aside>
-            <nav>
-                <p className="footer-title">Legal</p>
-                <Link className="link link-hover" href="/imprint">Imprint</Link>
-            </nav>
-        </footer>
+        <div className="container">
+            <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+                <aside>
+                    <div className="container"></div>
+                    <Image src="/adam_white.svg" alt="Logo" width="60" height="60" />
+                    <p>
+                        Adam (The Band!)
+                        <br />
+                    </p>
+                </aside>
+                <nav>
+                    <p className="footer-title">Legal</p>
+                    <Link className="link link-hover" href="/imprint">Imprint</Link>
+                </nav>
+            </footer>
+        </div>
     </div>
     </body>
     </html>
