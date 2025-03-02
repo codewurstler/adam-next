@@ -1,6 +1,19 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+/* customize tailwindcss */
+@utility container {
+  padding-inline: 1rem;
+  margin-inline: auto;
+
+  @variant md {
+    padding-inline: 0;
+  }
+}
+/* **** */
 
 /* customize daisyUI */
 @plugin "daisyui/theme" {
@@ -8,7 +21,7 @@
   default: true;
   --color-primary: "#8b0000";
 }
-/* ** */
+/* **** */
 
 /* custom css */
 .logo-bg {
