@@ -2,6 +2,15 @@
 @plugin '@tailwindcss/typography';
 @plugin "daisyui";
 
+/* customize daisyUI */
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: "#8b0000";
+}
+/* ** */
+
+/* custom css */
 .logo-bg {
   background: url("/adam_outline.svg");
   background-size: 100px 100px;
