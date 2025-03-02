@@ -56,7 +56,6 @@ export default function RootLayout({
                     <Image src="/adam_white.svg" alt="Logo" width="60" height="60" />
                     <p>
                         Adam (The Band!)
-                        <br />
                     </p>
                 </aside>
                 <nav>

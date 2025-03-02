@@ -15,7 +15,7 @@ function Navigation() {
                     <details className="dropdown dropdown-bottom dropdown-end">
                         <summary className="btn btn-square btn-soft btn-primary"><Bars3BottomLeftIcon
                             className="h-6 w-6"></Bars3BottomLeftIcon></summary>
-                        <ul className="menu dropdown-content bg-base-100 rounded-box z-1 min-w-[200px] p-2 shadow-sm mt-3">
+                        <ul className="menu dropdown-content bg-base-100 rounded-box z-1 min-w-[200px] p-2 shadow-sm mt-4">
                             <li><Link href="/#concerts">Upcoming Concerts</Link></li>
                             <li><Link href="/#booking">Contact / Booking</Link></li>
                             <li><Link href="/#social-media">Social Media</Link></li>
