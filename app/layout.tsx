@@ -14,6 +14,9 @@ const raj = Rajdhani({
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://adam-band.com"),
+    alternates: {
+        canonical: "/"
+    },
     title: "Adam | Swiss Rock Band – Alternative Rock aus der Schweiz",
     description: "Adam ist eine Schweizer Rockband, die kraftvollen Alternative Rock liefert. Discover our latest songs, upcoming concerts, and official merchandise!",
     openGraph: {
