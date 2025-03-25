@@ -6,7 +6,7 @@ function Navigation() {
     return (
         <div className="navbar bg-base-100 fixed top-0 left-0 z-10 shadow-sm">
             <div className="container flex">
-                <div className="flex-1">
+                <div className="navbar-start">
                     <Link className="btn btn-ghost text-lg" href="/">
                         <Image src="/adam_schwarz.svg"
                                height={0}
@@ -16,16 +16,19 @@ function Navigation() {
                         />
                     </Link>
                 </div>
-                <div className="flex-none">
-                    <details className="dropdown dropdown-bottom dropdown-end">
-                        <summary className="btn btn-square btn-soft btn-primary"><Bars3BottomLeftIcon
-                            className="h-6 w-6"></Bars3BottomLeftIcon></summary>
-                        <ul className="menu dropdown-content bg-base-100 rounded-box z-1 min-w-[200px] p-2 shadow-sm mt-4">
+                <div className="navbar-end">
+                    <div className="dropdown dropdown-bottom dropdown-end">
+                        <div tabIndex={0} role="button" className="btn btn-square btn-soft btn-primary">
+                            <Bars3BottomLeftIcon className="h-6 w-6"></Bars3BottomLeftIcon>
+                        </div>
+                        <ul
+                            tabIndex={0}
+                            className="menu dropdown-content bg-base-100 rounded-box z-1 min-w-[200px] p-2 shadow-sm mt-4">
                             <li><Link href="/#concerts">Upcoming Concerts</Link></li>
                             <li><Link href="/#booking">Contact / Booking</Link></li>
                             <li><Link href="/#social-media">Social Media</Link></li>
                         </ul>
-                    </details>
+                    </div>
                 </div>
             </div>
         </div>
@@ -33,3 +36,4 @@ function Navigation() {
 }
 
 export default Navigation;
+
