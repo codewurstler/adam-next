@@ -47,7 +47,12 @@ export default function RootLayout({
             <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
                 <aside>
                     <div className="container"></div>
-                    <Image src="/adam_white.svg" alt="Logo" width="60" height="60" />
+                    <Image src="/adam_white.svg"
+                           height={0}
+                           width={0}
+                           style={{width:'auto', height: "50px" }}
+                           alt="logo white"
+                    />
                     <p>
                         Adam (The Band!)
                     </p>

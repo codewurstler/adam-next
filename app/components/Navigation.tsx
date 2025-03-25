@@ -8,7 +8,12 @@ function Navigation() {
             <div className="container flex">
                 <div className="flex-1">
                     <Link className="btn btn-ghost text-lg" href="/">
-                        <Image src="/adam_schwarz.svg" width="50" height="20" alt="logo"/>
+                        <Image src="/adam_schwarz.svg"
+                               height={0}
+                               width={0}
+                               style={{width:'auto', height: "100%" }}
+                               alt="logo black"
+                        />
                     </Link>
                 </div>
                 <div className="flex-none">

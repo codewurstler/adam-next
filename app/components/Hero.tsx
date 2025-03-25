@@ -27,7 +27,13 @@ export default function Hero() {
                 <div className="hero-overlay logo-bg"></div>
                 <div className="hero-content h-full relative">
                     <div className="max-w-xl text-center">
-                        <Image src="/adam_white.svg" width="500" height="200" alt="logo" />
+                        <Image src="/adam_white.svg"
+                               height={0}
+                               width={0}
+                               style={{width:'500px', height: "auto" }}
+                               alt="logo hero"
+                               priority={true}
+                        />
                         <button onClick={() => scrollToElement("content")} className="btn btn-primary btn-outline btn-square absolute bottom-10" aria-label="Scroll down to content"><ChevronDoubleDownIcon className="h-6 w-6"></ChevronDoubleDownIcon></button>
                     </div>
                 </div>
