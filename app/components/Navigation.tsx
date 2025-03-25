@@ -18,7 +18,7 @@ function Navigation() {
                 </div>
                 <div className="navbar-end">
                     <div className="dropdown dropdown-bottom dropdown-end">
-                        <div tabIndex={0} role="button" className="btn btn-square btn-soft btn-primary">
+                        <div tabIndex={0} role="button" className="btn btn-square btn-soft btn-primary" aria-label="Name">
                             <Bars3BottomLeftIcon className="h-6 w-6"></Bars3BottomLeftIcon>
                         </div>
                         <ul
