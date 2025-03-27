@@ -14,7 +14,7 @@ export default async function Concerts() {
 
     return (
         <table className="table table-lg">
-            <thead>
+            <thead className="hidden sm:table-header-group">
             <tr>
                 <th>Date</th>
                 <th>Event</th>
@@ -24,10 +24,10 @@ export default async function Concerts() {
             </thead>
             <tbody>
             {concerts.map((concert) => (
-                <tr key={concert.id}>
-                    <th>{format(new Date(concert.datetime), "dd.MM.yyyy")}</th>
-                    <td>{concert.title}</td>
-                    <td>
+                <tr key={concert.id} className="flex flex-col text-center sm:table-row sm:text-left">
+                    <th className="pt-2 pb-0">{format(new Date(concert.datetime), "dd.MM.yyyy")}</th>
+                    <td className="py-2">{concert.title}</td>
+                    <td className="py-0">
                         {concert.venue.city}
                         {concert.venue.country && `, ${concert.venue.country}`}
                     </td>
@@ -38,7 +38,7 @@ export default async function Concerts() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Info / Tickets <ArrowTopRightOnSquareIcon className="h-4 w-4 hidden sm:block" />
+                            Info / Tickets <ArrowTopRightOnSquareIcon className="h-4 w-4" />
                         </a>
                     </td>
                 </tr>
