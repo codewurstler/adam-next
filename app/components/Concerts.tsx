@@ -10,8 +10,6 @@ export default async function Concerts() {
         return <p>There are currently no upcoming concerts</p>;
     }
 
-    console.log(concerts);
-
     return (
         <table className="table table-lg">
             <thead className="hidden sm:table-header-group">
