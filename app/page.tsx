@@ -4,6 +4,7 @@ import 'react-social-icons/youtube';
 import 'react-social-icons/tiktok';
 import 'react-social-icons/instagram';
 import Concerts from "@/app/components/Concerts";
+import Socialmedia from "@/app/components/Socialmedia";
 
 export const revalidate = 60
 export const dynamicParams = true
@@ -41,16 +42,12 @@ export default function Home() {
                     <div className="container mx-auto text-center">
                         <h2 className="text-4xl lg:text-6xl text-primary mb-20">Social Media</h2>
                         <p className="text-2xl">Checkout out all of our social media channels.</p>
-                        <p className="text-2xl mt-2">Don&#39;t forget to follow!</p>
-
-                        <div className="flex justify-center space-x-12 flex-wrap mt-10">
-                            <div><SocialIcon url="https://www.instagram.com/dudesofadam" target="_blank"
-                                             rel="noopener noreferrer"/></div>
-                            <div><SocialIcon url="https://www.youtube.com/@Dudes_of_Adam" target="_blank"
-                                             rel="noopener noreferrer"/></div>
-                            <div><SocialIcon url="https://www.tiktok.com/@dudesofadam" target="_blank"
-                                             rel="noopener noreferrer"/></div>
-                        </div>
+                        <p className="text-2xl mt-2 mb-10">Don&#39;t forget to follow!</p>
+                        <Socialmedia urls={[
+                            { url: "https://www.instagram.com/dudesofadam" },
+                            { url: "https://www.youtube.com/@Adam-Band" },
+                            { url: "https://www.tiktok.com/@dudesofadam" }
+                        ]} />
                     </div>
                 </section>
             </div>
