@@ -1,5 +1,4 @@
 import Hero from "@/app/components/Hero";
-import {SocialIcon} from "react-social-icons/component";
 import 'react-social-icons/youtube';
 import 'react-social-icons/tiktok';
 import 'react-social-icons/instagram';
