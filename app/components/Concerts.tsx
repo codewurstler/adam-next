@@ -10,6 +10,8 @@ export default async function Concerts() {
         return <p>There are currently no upcoming concerts</p>;
     }
 
+    console.log(concerts);
+
     return (
         <table className="table table-lg">
             <thead>
@@ -32,7 +34,7 @@ export default async function Concerts() {
                     <td>
                         <a
                             className="btn btn-primary btn-outline"
-                            href={concert.url}
+                            href={concert.offers[0]?.url}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
