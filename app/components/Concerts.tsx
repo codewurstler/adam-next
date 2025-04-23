@@ -6,7 +6,7 @@ import { Concert} from "@/types/bandsInTown";
 export default async function Concerts() {
     const concerts: Concert[] = await fetchConcerts(15577413);
 
-    if (concerts.length === undefined) {
+    if (concerts.length === 0) {
         return <p>There are currently no upcoming concerts</p>;
     }
 
