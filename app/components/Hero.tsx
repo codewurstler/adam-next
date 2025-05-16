@@ -33,6 +33,7 @@ export default function Hero() {
                                style={{width:'500px', height: "auto" }}
                                alt="logo hero"
                                priority={true}
+                               data-aos="zoom-in"
                         />
                         <button onClick={() => scrollToElement("content")} className="btn btn-primary btn-outline btn-square absolute bottom-10" aria-label="Scroll down to content"><ChevronDoubleDownIcon className="h-6 w-6"></ChevronDoubleDownIcon></button>
                     </div>
