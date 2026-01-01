@@ -17,13 +17,6 @@ export default function Imprint() {
 
                     <p><strong>Band Name:</strong> Adam</p>
 
-                    <h3>Represented by:</h3>
-                    <p>
-                        Philipp Isaak (Lead Singer)<br/>
-                        6403 Küssnacht<br/>
-                        Switzerland
-                    </p>
-
                     <h3>Contact:</h3>
                     <p>
                         Email: <a href="mailto:dudesofadam@gmail.com">dudesofadam@gmail.com</a><br/>
